@@ -6,20 +6,28 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
+  "homepage": "https://adosdm.github.io/",
   "dependencies": {
+    "@types/gsap": "^1.20.2",
+    "gh-pages": "^6.3.0",
+    "gsap": "^3.12.7",
+    "next": "15.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.0"
+    "sass": "^1.86.3",
+    "swiper": "^11.2.6"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.0",
-    "@eslint/eslintrc": "^3"
+    "typescript": "^5"
   }
 }

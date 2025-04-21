@@ -1,0 +1,63 @@
+.section {
+    height: 100vh;
+    background: url('/main_bg_1.png') center center / cover no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 700px;
+}
+
+.contentWrapper {
+    width: 100%;
+    max-width: 1280px;
+    padding-bottom: 200px;
+    text-align: center;
+    color: #fff;
+}
+
+.mainText {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 130%;
+    letter-spacing: -5%;
+    text-transform: capitalize;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.subText {
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -5%;
+    text-transform: capitalize;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.ctaButton {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 58px;
+    padding: 0 55px;
+    background-color: #13A64B;
+    color: #fff;
+    border-radius: 99px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    width: max-content;
+}
+
+.arrowWrapper {
+    position: absolute;
+    bottom: 57px;
+    left: 50%;
+    transform: translateX(-50%);
+}

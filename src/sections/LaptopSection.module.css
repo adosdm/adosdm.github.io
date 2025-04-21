@@ -1,0 +1,50 @@
+.section {
+    height: 600vh;
+    background-color: #F5F5F3;
+    position: relative;
+    padding-top: 100vh;
+}
+
+.content {
+    text-align: center;
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title {
+    font-size: 64px;
+    font-weight: 900;
+    color: #000;
+    opacity: 0.3;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.laptopImage {
+    width: 770px;
+    height: 370px;
+    position: relative;
+    margin: 0 auto 25px;
+    border-radius: 12px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 50%;
+        top: -11%;
+        transform: translateX(-50%);
+        will-change: transform, opacity;
+        backface-visibility: hidden;
+        image-rendering: auto;
+    }
+}
+
+.subtext {
+    font-size: 70px;
+    font-weight: 900;
+    color: #000;
+}

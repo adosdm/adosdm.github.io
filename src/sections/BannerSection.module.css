@@ -1,0 +1,41 @@
+.section {
+    position: relative;
+    min-height: 450px;
+    height: 100vh;
+    background-color: #000;
+    background-image: url("/order_bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.overlay {
+    width: 100%;
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin: 0 auto 40px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.fade {
+    opacity: 0.5;
+}

@@ -1,0 +1,58 @@
+.header {
+    background: none;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    max-width: 1280px;
+    height: 100%;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 92px;
+}
+
+.navLeft {
+    display: flex;
+    gap: 56px;
+}
+
+.navLeft a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.marketButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #13a64b;
+    color: #fff;
+    font-weight: 800;
+    font-size: 15px;
+    height: 43px;
+    padding: 0 25px;
+    border-radius: 99px;
+    text-decoration: none;
+    gap: 5px;
+}

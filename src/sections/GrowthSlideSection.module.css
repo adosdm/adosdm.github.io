@@ -1,0 +1,221 @@
+.section {
+    background-color: #fff;
+    padding: 160px 0;
+}
+
+.topWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1280px;
+    width: 95%;
+    margin: 0 auto 85px;
+}
+
+.leftText {
+    flex: 1;
+}
+
+.rightText {
+    flex: 1;
+    font-size: 18px;
+    color: #757575;
+    line-height: 1.6;
+    margin-top: 66px;
+}
+
+.badge {
+    font-size: 12px;
+    font-weight: 800;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 900;
+    color: #000;
+    line-height: 1.5;
+}
+
+.fade {
+    opacity: 0.4;
+}
+
+.emphasis {
+    font-weight: 500;
+    color: #000;
+    opacity: 0.7;
+}
+
+.bottomWrap {
+    max-width: 1280px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.graphContainer {
+    position: relative;
+    width: 440px;
+    height: 320px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.graphBg {
+    border-radius: 20px;
+}
+
+.graphButtons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.graphButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    color: #9E9E9E;
+    font-weight: 400;
+    position: relative;
+    transition: color 0.3s;
+    width: 68px;
+    height: 10%;
+    border-radius: 12px;
+    transition: height 0.5s;
+}
+
+.graphButton::before {
+    content: "";
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(119, 210, 169, 1);
+    margin: 0 auto 6px;
+    border: 6px solid #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.graphButton.active {
+    color: #00b383;
+    font-weight: 700;
+    height: 90%;
+    background: rgba(239, 239, 239, 0.5);
+
+    span {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: max-content;
+    }
+
+    &::before {
+        display: block;
+    }
+
+    &:nth-child(1) {
+        &::before {
+            top: 49%;
+        }
+    }
+
+    &:nth-child(2) {
+        &::before {
+            top: 48%;
+        }
+    }
+
+    &:nth-child(3) {
+        &::before {
+            top: 35%;
+        }
+    }
+
+    &:nth-child(4) {
+        &::before {
+            top: 35%;
+        }
+    }
+}
+
+.graphButton.active::before {
+    background-color: #00b383;
+}
+
+.slideWrap {
+    flex: 1;
+    min-height: 280px;
+    width: calc(100% - 460px)
+}
+
+.slideCard {
+    background: #f5f5f5;
+    border-radius: 23px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    img {
+        position: initial !important;
+        height: auto !important;
+    }
+}
+
+.overlayContent {
+    position: absolute;
+    left: 56px;
+    bottom: 45px;
+}
+
+.category {
+    font-size: 11px;
+    font-weight: 900;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 3px 12px;
+    border-radius: 99px;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.slideTitle {
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.slideSub {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.5;
+}
